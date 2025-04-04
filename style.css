@@ -1,0 +1,72 @@
+
+body a {
+
+	background: #0000
+}
+.text1{
+	position:absolute;
+	background: #8A2BE2;
+	font-size: 25px;
+	margin-top: 500px;
+	margin-left: 120px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	padding-left: 50px;
+}
+.textzagol {
+	position:absolute;
+	background: blue;
+	color: white;
+	font-size: 35px;
+	margin: 0px;
+	padding: 10px;
+	border:20px solid #ffff00;
+}
+
+.image1{
+	position:absolute;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 50px;
+}
+.font1{
+	color:yellow;
+	font-size: 35px;
+}
+
+image{
+	width: 100px;
+    .left { 
+	    float: left;
+	}
+
+	.right {
+		float: right
+	}
+
+}
+
+.image2{
+	position:absolute;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	padding-left: 50px;
+}
+
+.img-container li{
+	display: inline-block;
+	width: 32%;
+	padding: 10px
+}
+
+.img-container {
+	text-alig: center;
+	margin-top:20px;
+	width: 100%;
+}
+
+.img-container img{
+	
+}
