@@ -1,0 +1,219 @@
+
+body {
+	background: #0D0E26;
+}
+.header-block {
+	display: flex;
+	padding: 30px 40px;
+}
+.text1 {
+	background: #8A2BE2;
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	font-style: italic;
+	flex: 50%;
+	height: 100%;
+	margin-left: 20px;
+}
+.textzagol {
+	position: absolute;
+	background: #151340;
+	color: white;
+	font-size: 36px;
+	margin: 20px;
+	padding: 10px;
+	border: 20px solid #A62991;
+	font-weight: bold;
+	top: 40px;
+	left: 27px;
+}
+
+.facts {
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.facts1 {
+	color: white;
+	font-size: 22px;
+}
+
+.image{
+	flex: 50%;
+}
+.font1{
+	color: #A62991;
+	font-size: 35px;
+
+}
+
+img{
+	width: 100%;
+
+}
+nav {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+nav a {
+	color: white;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.menu-list {
+	list-style: none;
+	padding: 0;
+}
+.menu-list li {
+	display: inline-block;
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 20px;
+	z-index: 10;
+}
+.hamburger-menu-list {
+	display: none;
+	background-color: #151340;
+	padding: 20px;
+	list-style: none;
+	margin-top: 30px;
+}
+.hamburger-menu-list a {
+	color: white;
+	font-size: 18px;
+}
+.hamburger-menu-list li {
+	margin-bottom: 5px;
+}
+.hamburger {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+.hamburger-menu:hover .hamburger-menu-list {
+	display: block;
+}
+.h-item {
+	width: 100%;
+	height: 3px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+/* галерея фото */
+.img {
+	width: 300px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.inline-gallery {
+	text-align: center;
+	clear: both;
+}
+.inline-gallery img {
+	display: inline-block;
+	width: 300px;
+	margin: 15px;
+	border-radius: 10px;
+	transition: all 0.4s ease-in-out;
+	transition-duration: 0.4s;
+}
+.inline-gallery img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 12px 12px #1f2259;
+}
+.center-block {
+	width: 100%;
+}
+/* галерея відео */
+.multimedia {
+	overflow: auto;
+}
+.multimedia-video {
+	display: inline-block;
+	margin: 10px;
+	width: 31%;
+
+}
+.multimedia-video video {
+	max-width: 350px;
+}
+h2 {
+	color: white;
+}
+/* анімація квадрат */
+.square {
+	width: 101px;
+	height: 101px;
+	background-color: #A62991;
+	animation-name: spin;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	position: absolute;
+	left: 450px;
+	top: 60px;
+	animation-delay: 2s;
+}
+@keyframes spin {
+	0% {transform: rotate(0deg)}
+	25% {background-color: #5527c9;border-radius: 10px;}
+	100% {transform: rotate(360deg)}
+}
+
+/* анімація квадрат один і два */
+.one {
+	height: 300px;
+	width: 300px;
+	background-color: #8A2BE2;
+	transition-duration: 0.5s;
+	transform: rotate(0);
+}
+.two {
+	width: 100px;
+	height: 100px;
+	background-color: #ff5f00;
+	transition: all 0.3s;
+}
+.one:hover {
+	transform: rotate(90deg);
+	border-radius: 50%;
+	background-color: #DC9F31;
+}
+.one:hover .two {
+	background-color: #31dc59;
+	border-radius: 50%;
+}
+@media (max-width: 800px) {
+	.textzagol {
+		position: inherit;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.header-block {
+		flex-direction: column;
+	}
+}
